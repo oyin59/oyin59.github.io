@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App — Project Case Study</title>
+
+  <!-- Shared galaxy stylesheet -->
+  <link rel="stylesheet" href="project.css" />
+  <link rel="icon" type="image/svg+xml" href="../asset/favicon.svg" />
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky header -->
+  <header class="project-header" role="banner">
+    <div class="container">
+      <a href="../index.html" class="back-link" aria-label="Back to portfolio">
+        <span aria-hidden="true">←</span> Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="project" role="main">
+    <!-- HERO / TITLE -->
+    <section class="hero">
+      <div class="container flow">
+        <h1 class="title">Weather App</h1>
+        <p class="lead">
+          A minimalist, responsive weather dashboard that fetches live data from WeatherAPI — designed to visualize
+          forecasts beautifully, even on dark galaxy backgrounds.
+        </p>
+
+        <!-- Quick overview row -->
+        <ul class="overview" aria-label="Project overview">
+          <li>
+            <span class="label">Role</span>
+            <span class="value">Front-End Developer</span>
+          </li>
+          <li>
+            <span class="label">Scope</span>
+            <span class="value">API Integration · UI Build</span>
+          </li>
+          <li>
+            <span class="label">Timeline</span>
+            <span class="value">Personal Project</span>
+          </li>
+        </ul>
+
+        <!-- Tags -->
+        <div class="tags" aria-label="Tags">
+          <span class="tag">API</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Responsive</span>
+          <span class="tag">Weather</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY: Problem / Goal / Approach / Outcome -->
+    <section class="story container">
+      <div class="story-grid">
+        <article class="story-card">
+          <h2>Problem</h2>
+          <p>
+            Most simple weather apps feel cluttered or too plain. I wanted to create something visually engaging but
+            clean — where users can check conditions at a glance.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>Goal</h2>
+          <p>
+            Build a lightweight, dark-themed weather app with a clear interface, quick city search, and real-time
+            forecast display — powered by WeatherAPI.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>Approach</h2>
+          <ul class="bullet">
+            <li>Integrated WeatherAPI to fetch live data dynamically</li>
+            <li>Used vanilla JavaScript for simplicity and performance</li>
+            <li>Styled with linear gradients and “galaxy blue” theme to match portfolio aesthetic</li>
+          </ul>
+        </article>
+
+        <article class="story-card">
+          <h2>Outcome</h2>
+          <ul class="bullet">
+            <li>Responsive, real-time weather data for any location</li>
+            <li>Minimal layout that highlights key weather metrics</li>
+            <li>Designed and built entirely within two days</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- IMAGE GALLERY -->
+    <section class="gallery">
+      <div class="container">
+        <h2 class="section-title">Screens & Highlights</h2>
+
+        <div class="img-grid" role="list">
+          <figure class="img-card" role="listitem">
+            <img src="../asset/weather-dashboard.png" alt="Weather app showing London forecast" />
+            <figcaption>Main dashboard — live weather updates by city</figcaption>
+          </figure>
+
+          <figure class="img-card" role="listitem">
+            <img src="../asset/weather-forecast.png" alt="Weekly forecast cards" />
+            <figcaption>Forecast section — clean scrollable 7-day layout</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="container section">
+      <h2 class="section-title">Features</h2>
+      <ul class="bullet">
+        <li>Displays real-time temperature, humidity, and wind data</li>
+        <li>Fetches 7-day forecasts with icons and conditions</li>
+        <li>Responsive design suitable for both desktop and mobile</li>
+        <li>Built with inline HTML, CSS, and JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- TECH -->
+    <section class="container section">
+      <h2 class="section-title">Tech Stack</h2>
+      <ul class="tech-list" aria-label="Technologies used">
+        <li>HTML</li>
+        <li>CSS (inline)</li>
+        <li>JavaScript</li>
+        <li>WeatherAPI</li>
+        <li>Bootstrap (via CDN)</li>
+      </ul>
+    </section>
+
+    <!-- REQUIREMENT BRIEF (PRINT ONLY) -->
+    <section class="req-brief container section">
+      <h2 class="section-title">Project Instructions</h2>
+      <p><strong>Objective:</strong> Develop a dynamic weather dashboard that fetches specific location data from a
+        public API and displays current conditions/forecasts.</p>
+
+      <h3>Core Requirements</h3>
+      <ul class="bullet">
+        <li><strong>Implement Search:</strong> Allow users to search for weather by City Name or Zip Code.</li>
+        <li><strong>Show Current Weather:</strong> Display Temperature (C/F), Humidity, Wind Speed, and Condition Icon.
+        </li>
+        <li><strong>Render Forecast:</strong> Fetch and render a 7-day forecast with daily highs/lows.</li>
+        <li><strong>Handle Errors:</strong> Display user-friendly messages for invalid city names or network errors.
+        </li>
+      </ul>
+
+      <h3>UI Guidelines</h3>
+      <ul class="bullet">
+        <li>Use an atmospheric color palette (blues/grays) or dynamic backgrounds based on weather conditions.</li>
+        <li>Ensure the layout is responsive (cards for forecast should wrap or scroll).</li>
+      </ul>
+
+      <h3>Technical Constraints</h3>
+      <ul class="bullet">
+        <li>Use the Fetch API with async/await.</li>
+        <li>Recommended API: WeatherAPI.com or OpenWeatherMap (Free Tier).</li>
+        <li>Ensure no keys are hardcoded if source is public (use env variables if possible, or client-side proxy).</li>
+      </ul>
+    </section>
+
+    <!-- LINKS -->
+    <section class="container links">
+      <a class="btn glow" href="https://github.com/oyin59/weather-app" target="_blank" rel="noopener">View on GitHub</a>
+      <a class="btn outline" href="https://oyin59.github.io/weather-app/" target="_blank" rel="noopener">View Live
+        Demo</a>
+      <a class="btn outline" href="#" onclick="window.print(); return false;">Project Brief (PDF)</a>
+    </section>
+  </main>
+
+  <footer class="project-footer" role="contentinfo">
+    &copy; 2025 Oyinlola Arowolo. All Rights Reserved.
+  </footer>
+</body>
+
+</html>

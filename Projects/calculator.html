@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator App — Project Case Study</title>
+
+  <!-- Shared galaxy stylesheet -->
+  <link rel="stylesheet" href="project.css" />
+  <link rel="icon" type="image/svg+xml" href="../asset/favicon.svg" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="project-header">
+    <div class="container">
+      <a href="../index.html" class="back-link"><span aria-hidden="true">←</span> Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main id="main" class="project">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container flow">
+        <h1 class="title">Calculator App</h1>
+        <p class="lead">
+          A sleek, responsive calculator built with vanilla JavaScript and Bootstrap — designed for clean usability and
+          quick math on any device.
+        </p>
+
+        <ul class="overview">
+          <li>
+            <span class="label">Role</span>
+            <span class="value">Front-End Developer</span>
+          </li>
+          <li>
+            <span class="label">Scope</span>
+            <span class="value">UI Design · Logic Implementation</span>
+          </li>
+          <li>
+            <span class="label">Timeline</span>
+            <span class="value">Personal Project</span>
+          </li>
+        </ul>
+
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">Logic</span>
+          <span class="tag">Responsive</span>
+          <span class="tag">Mini App</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story container">
+      <div class="story-grid">
+        <article class="story-card">
+          <h2>Problem</h2>
+          <p>
+            Basic calculators often look dated or cluttered. I wanted to build a clean, modern version with simple logic
+            and sharp visuals using Bootstrap.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>Goal</h2>
+          <p>
+            Create an elegant, responsive calculator with smooth button layout, real-time computation, and easy-to-read
+            screen display.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>Approach</h2>
+          <ul class="bullet">
+            <li>Structured UI with a 4x4 grid layout using CSS Grid</li>
+            <li>Implemented clear, delete, and operator functions</li>
+            <li>Added Bootstrap for layout and responsiveness</li>
+          </ul>
+        </article>
+
+        <article class="story-card">
+          <h2>Outcome</h2>
+          <ul class="bullet">
+            <li>Fully responsive calculator for mobile and desktop</li>
+            <li>Clean color contrast and easy-to-use interface</li>
+            <li>Project completed within a day</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery">
+      <div class="container">
+        <h2 class="section-title">Screens & Highlights</h2>
+
+        <div class="img-grid" role="list">
+          <figure class="img-card" role="listitem">
+            <img src="../asset/calculator-interface.png" alt="Calculator app interface" />
+            <figcaption>Main interface — minimal and responsive</figcaption>
+          </figure>
+          <figure class="img-card" role="listitem">
+            <img src="../asset/calculator-layout.png" alt="Calculator layout" />
+            <figcaption>4x4 grid keypad layout using Bootstrap</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="container section">
+      <h2 class="section-title">Features</h2>
+      <ul class="bullet">
+        <li>Responsive 4x4 grid layout</li>
+        <li>Basic operations (add, subtract, multiply, divide)</li>
+        <li>AC and Delete functions</li>
+        <li>Error handling for invalid inputs</li>
+      </ul>
+    </section>
+
+    <!-- TECH -->
+    <section class="container section">
+      <h2 class="section-title">Tech Stack</h2>
+      <ul class="tech-list">
+        <li>HTML</li>
+        <li>CSS (inline)</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- REQUIREMENT BRIEF (PRINT ONLY) -->
+    <section class="req-brief container section">
+      <h2 class="section-title">Project Instructions</h2>
+      <p><strong>Objective:</strong> Build a responsive web-based calculator that performs basic arithmetic operations
+        with a clean, grid-based user interface.</p>
+
+      <h3>Core Requirements</h3>
+      <ul class="bullet">
+        <li><strong>Implement Display:</strong> Show the current input and calculation result clearly.</li>
+        <li><strong>Enable Operations:</strong> Implement Addition (+), Subtraction (-), Multiplication (*), and
+          Division (/).
+        </li>
+        <li><strong>Add Controls:</strong> Include 'AC' (All Clear) to reset and 'DEL' to remove the last character.
+        </li>
+        <li><strong>Handle Logic:</strong> Support floating-point numbers and prevent division by zero errors.</li>
+      </ul>
+
+      <h3>UI Guidelines</h3>
+      <ul class="bullet">
+        <li>Use a CSS Grid layout for the keypad (4x4 or 5x4).</li>
+        <li>Ensure buttons have distinct hover states for interactivity.</li>
+        <li>Design for mobile-first responsiveness (stacking correctly on small screens).</li>
+      </ul>
+
+      <h3>Technical Constraints</h3>
+      <ul class="bullet">
+        <li>Use Vanilla JavaScript (no frameworks/libraries).</li>
+        <li>Do not use the `eval()` function for calculation (use a custom parser or `Function` constructor for safety).
+        </li>
+      </ul>
+    </section>
+
+    <!-- LINKS -->
+    <section class="container links">
+      <a class="btn glow" href="https://github.com/oyin59/web-calculator" target="_blank" rel="noopener">View on
+        GitHub</a>
+      <a class="btn outline" href="https://oyin59.github.io/web-calculator/" target="_blank" rel="noopener">View Live
+        Demo</a>
+      <a class="btn outline" href="#" onclick="window.print(); return false;">Project Brief (PDF)</a>
+    </section>
+  </main>
+
+  <footer class="project-footer">
+    &copy; 2025 Oyinlola Arowolo. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
