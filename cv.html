@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV — Oyinlola Esther Arowolo</title>
+    <meta name="description"
+        content="Curriculum Vitae of Oyinlola Esther Arowolo - Computer Science Undergraduate and Creative Technologist." />
+    <link rel="icon" type="image/svg+xml" href="asset/favicon.svg" />
+
+    <!-- Icons & Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css" />
+
+    <style>
+        /* CV Specific Styles */
+        .cv-container {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 2rem;
+            background: rgba(10, 27, 63, 0.65);
+            border-radius: var(--radius);
+            border: 1px solid rgba(102, 166, 255, 0.16);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Override portfolio.css section defaults */
+        section {
+            min-height: auto !important;
+            padding: 0 !important;
+            display: block !important;
+            margin-bottom: 3rem;
+        }
+
+        .cv-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(102, 166, 255, 0.2);
+            padding-bottom: 2rem;
+        }
+
+        .cv-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            color: #e9f3ff;
+        }
+
+        .cv-contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .cv-contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .cv-contact-info a:hover {
+            color: var(--accent-2);
+        }
+
+        .cv-section {
+            margin-bottom: 3rem;
+        }
+
+        .cv-section h2 {
+            font-size: 1.8rem;
+            color: var(--accent-2);
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+        }
+
+        .cv-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .cv-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-item h3 {
+            font-size: 1.3rem;
+            color: #e6f1ff;
+        }
+
+        .cv-date {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .cv-subtitle {
+            font-size: 1.1rem;
+            color: #ccdefc;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .cv-content p,
+        .cv-content ul {
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
+
+        .cv-content ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-category h3 {
+            font-size: 1.2rem;
+            color: #e6f1ff;
+            margin-bottom: 0.8rem;
+            border-bottom: 1px dashed rgba(102, 166, 255, 0.3);
+            padding-bottom: 0.3rem;
+            display: inline-block;
+        }
+
+        .print-btn-container {
+            text-align: center;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            body::before,
+            body::after,
+            .progress-indicator,
+            header,
+            footer,
+            .print-btn-container,
+            .scroll-top {
+                display: none;
+            }
+
+            .cv-container {
+                margin: 0;
+                padding: 0;
+                background: none;
+                border: none;
+                box-shadow: none;
+                width: 100%;
+                max-width: 100%;
+                color: black;
+            }
+
+            .cv-header h1 {
+                color: #000;
+            }
+
+            .cv-contact-info,
+            .cv-contact-info a {
+                color: #333;
+            }
+
+            .cv-section h2 {
+                color: #000;
+                border-color: #000;
+            }
+
+            .cv-item h3 {
+                color: #000;
+            }
+
+            .cv-subtitle {
+                color: #333;
+            }
+
+            .cv-content p,
+            .cv-content ul {
+                color: #333;
+            }
+
+            .cv-date {
+                color: #333;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PROGRESS BAR -->
+    <div class="progress-indicator"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="asset/oyinlola.png" alt="Oyinlola Logo" width="50" /></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#" class="active">CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cv-container">
+        <div class="cv-header">
+            <h1>Oyinlola Esther Arowolo</h1>
+            <div class="cv-contact-info">
+                <span><i class="fas fa-envelope"></i> aoyinlola20@gmail.com</span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/oyinlola-arowolo-5b2241332/"
+                        target="_blank">LinkedIn Profile</a></span>
+                <span><i class="fas fa-map-marker-alt"></i> Abuja, Nigeria</span>
+            </div>
+        </div>
+
+        <!-- PROFILE -->
+        <section class="cv-section">
+            <h2>Profile</h2>
+            <div class="cv-content">
+                <p>
+                    Computer Science undergraduate with a strong interest in front-end development, web applications,
+                    and creative technology. Experienced in building responsive websites and interactive applications
+                    using HTML, CSS, JavaScript, and MySQL through academic and personal projects. Particularly
+                    interested in UI/UX, creative design, game development, and computer animation, and eager to gain
+                    hands-on industry experience through internships or junior roles.
+                </p>
+            </div>
+        </section>
+
+        <!-- WORK EXPERIENCE -->
+        <section class="cv-section">
+            <h2>Work Experience</h2>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h3>NIIT (National Institute of Information Technology), Abuja</h3>
+                    <span class="cv-date">Nov 2021</span>
+                </div>
+                <div class="cv-subtitle">Student Intern</div>
+                <div class="cv-content">
+                    <ul>
+                        <li>Learned the basics of Python, developed a simple game and calculator.</li>
+                        <li>Gained skills in MS Word and MS Excel.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="cv-section">
+            <h2>Education</h2>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h3>Aston University, Birmingham</h3>
+                    <span class="cv-date">Sep 2023 - Present</span>
+                </div>
+                <div class="cv-subtitle">BSc (Hons) Computer Science</div>
+                <div class="cv-content">
+                    <p>Currently in second year, studying courses including web development, AI, and software
+                        engineering.</p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h3>Durham University International Study Centre, Stockton-On-Tees</h3>
+                    <span class="cv-date">Sep 2022 - Jun 2023</span>
+                </div>
+                <div class="cv-subtitle">Foundation Year in Computer Science</div>
+                <div class="cv-content">
+                    <ul>
+                        <li>Courses: Pure Mathematics, Algorithms, Computer Science.</li>
+                        <li>Project: Comparison of different sorting algorithms to analyse time complexity.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <h3>Doveland High School, Abuja</h3>
+                    <span class="cv-date">Sep 2016 - Jun 2022</span>
+                </div>
+                <div class="cv-content">
+                    <p>WAEC Result: A1 in ICT.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="cv-section">
+            <h2>Key Projects</h2>
+
+            <div class="cv-item">
+                <h3>Optique E-commerce Website</h3>
+                <div class="cv-content">
+                    <p>A responsive eyewear store interface built with HTML, CSS, and JavaScript. Features product
+                        grids, cart functionality, and specific visual branding.</p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Aston Museum Kiosk</h3>
+                <div class="cv-content">
+                    <p>Accessible touchscreen interface design for a museum, focusing on larger touch targets and clear
+                        navigation for diverse user groups.</p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Weather Dashboard</h3>
+                <div class="cv-content">
+                    <p>Real-time weather data visualization using WeatherAPI. Displays current conditions and forecasts
+                        with dynamic icons.</p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Calculator App</h3>
+                <div class="cv-content">
+                    <p>A clean, logic-driven calculator built with JavaScript, handling arithmetic operations and UI
+                        updates smoothly.</p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Connect 4 Game in Python</h3>
+                <div class="cv-content">
+                    <p>Developed a GUI-based game with user and administrative login. <a
+                            href="https://github.com/esta7968/Connect-4-" target="_blank"><i class="fab fa-github"></i>
+                            View Code</a></p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Train Booking Website</h3>
+                <div class="cv-content">
+                    <p>Created using HTML, CSS, JavaScript, PHP, and MySQL. <a
+                            href="https://github.com/esta7968/Website-Train-booking" target="_blank"><i
+                                class="fab fa-github"></i> View Code</a></p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Static Travel Blog</h3>
+                <div class="cv-content">
+                    <p>Built a static website showcasing various travel destinations. <a
+                            href="https://github.com/esta7968/Website-Blog" target="_blank"><i
+                                class="fab fa-github"></i> View Code</a></p>
+                </div>
+            </div>
+
+            <div class="cv-item">
+                <h3>Car Renting Database System</h3>
+                <div class="cv-content">
+                    <p>Database management system for a car rental service. <a
+                            href="https://github.com/esta7968/Database-Car-renting" target="_blank"><i
+                                class="fab fa-github"></i> View Code</a></p>
+                </div>
+            </div>
+        </section>
+        <!-- SKILLS -->
+        <section class="cv-section">
+            <h2>Key Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="cv-content">
+                        <ul>
+                            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), Bootstrap 5</li>
+                            <li><strong>Backend:</strong> Python (Django), PHP, Java</li>
+                            <li><strong>Database:</strong> MySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Design & Tools</h3>
+                    <div class="cv-content">
+                        <ul>
+                            <li><strong>UI/UX:</strong> Figma, Adobe XD</li>
+                            <li><strong>Creative Tech:</strong> Unity, Blender</li>
+                            <li><strong>Other:</strong> Git, Responsive Design, MS Office</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERESTS & LANGUAGES -->
+        <section class="cv-section">
+            <h2>Additional Info</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Interests & Hobbies</h3>
+                    <div class="cv-content">
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Cooking</li>
+                            <li>Bead Craft</li>
+                            <li>Makeup Artistry</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="cv-content">
+                        <ul>
+                            <li>English (Native/Fluent)</li>
+                            <li>Yoruba</li>
+                            <li>Hausa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="print-btn-container">
+            <button class="btn" onclick="window.print()">Print / Save as PDF</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Oyinlola Esther Arowolo. All Rights Reserved.</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
