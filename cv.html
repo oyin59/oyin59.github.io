@@ -20,11 +20,10 @@
             max-width: 1000px;
             margin: 80px auto;
             padding: 2rem;
-            background: rgba(10, 27, 63, 0.65);
+            background: var(--bg-secondary);
             border-radius: var(--radius);
-            border: 1px solid rgba(102, 166, 255, 0.16);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-soft);
         }
 
         /* Override portfolio.css section defaults */
@@ -38,14 +37,14 @@
         .cv-header {
             text-align: center;
             margin-bottom: 3rem;
-            border-bottom: 1px solid rgba(102, 166, 255, 0.2);
+            border-bottom: 1px solid var(--border-light);
             padding-bottom: 2rem;
         }
 
         .cv-header h1 {
             font-size: 2.8rem;
             margin-bottom: 0.5rem;
-            color: #e9f3ff;
+            color: var(--text);
         }
 
         .cv-contact-info {
@@ -53,7 +52,7 @@
             justify-content: center;
             gap: 1.5rem;
             flex-wrap: wrap;
-            color: var(--accent);
+            color: var(--accent-dark);
             font-weight: 600;
         }
 
@@ -93,7 +92,7 @@
 
         .cv-item h3 {
             font-size: 1.3rem;
-            color: #e6f1ff;
+            color: var(--text);
         }
 
         .cv-date {
@@ -104,7 +103,7 @@
 
         .cv-subtitle {
             font-size: 1.1rem;
-            color: #ccdefc;
+            color: var(--text-dim);
             margin-bottom: 0.5rem;
             font-style: italic;
         }
@@ -128,9 +127,9 @@
 
         .skill-category h3 {
             font-size: 1.2rem;
-            color: #e6f1ff;
+            color: var(--text);
             margin-bottom: 0.8rem;
-            border-bottom: 1px dashed rgba(102, 166, 255, 0.3);
+            border-bottom: 1px dashed var(--border-light);
             padding-bottom: 0.3rem;
             display: inline-block;
         }
@@ -349,42 +348,20 @@
                         updates smoothly.</p>
                 </div>
             </div>
-
             <div class="cv-item">
-                <h3>Connect 4 Game in Python</h3>
+                <h3>Campus Night Shift</h3>
                 <div class="cv-content">
-                    <p>Developed a GUI-based game with user and administrative login. <a
-                            href="https://github.com/esta7968/Connect-4-" target="_blank"><i class="fab fa-github"></i>
-                            View Code</a></p>
+                    <p>A stealth-adventure prototype built in Unity (C#) featuring an AI security guard using a Finite State Machine, raycast-based interactions, and a complete game loop.</p>
                 </div>
             </div>
 
             <div class="cv-item">
-                <h3>Train Booking Website</h3>
+                <h3>ProjectMatch</h3>
                 <div class="cv-content">
-                    <p>Created using HTML, CSS, JavaScript, PHP, and MySQL. <a
-                            href="https://github.com/esta7968/Website-Train-booking" target="_blank"><i
-                                class="fab fa-github"></i> View Code</a></p>
+                    <p>A smart, automated final-year project matching system built with Django, SQLite, and Bootstrap. Features a custom algorithmic matching engine, charting, and engaging UI/UX.</p>
                 </div>
             </div>
 
-            <div class="cv-item">
-                <h3>Static Travel Blog</h3>
-                <div class="cv-content">
-                    <p>Built a static website showcasing various travel destinations. <a
-                            href="https://github.com/esta7968/Website-Blog" target="_blank"><i
-                                class="fab fa-github"></i> View Code</a></p>
-                </div>
-            </div>
-
-            <div class="cv-item">
-                <h3>Car Renting Database System</h3>
-                <div class="cv-content">
-                    <p>Database management system for a car rental service. <a
-                            href="https://github.com/esta7968/Database-Car-renting" target="_blank"><i
-                                class="fab fa-github"></i> View Code</a></p>
-                </div>
-            </div>
         </section>
         <!-- SKILLS -->
         <section class="cv-section">

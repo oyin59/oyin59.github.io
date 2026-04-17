@@ -279,31 +279,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Check local storage or system preference
   const savedTheme = localStorage.getItem('theme');
-  const systemLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (savedTheme === 'light' || (!savedTheme && systemLight)) {
+  if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+    applyTheme('dark');
+  } else {
     applyTheme('light');
   }
 
   function applyTheme(theme) {
-    if (theme === 'light') {
-      root.setAttribute('data-theme', 'light');
+    if (theme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
       if (themeIcon) { themeIcon.className = 'fas fa-sun'; }
-      localStorage.setItem('theme', 'light');
+      localStorage.setItem('theme', 'dark');
     } else {
       root.removeAttribute('data-theme');
       if (themeIcon) { themeIcon.className = 'fas fa-moon'; }
-      localStorage.setItem('theme', 'dark');
+      localStorage.setItem('theme', 'light');
     }
   }
 
   if (themeToggle) {
     themeToggle.addEventListener('click', () => {
       const currentTheme = root.getAttribute('data-theme');
-      if (currentTheme === 'light') {
-        applyTheme('dark');
-      } else {
+      if (currentTheme === 'dark') {
         applyTheme('light');
+      } else {
+        applyTheme('dark');
       }
     });
   }
