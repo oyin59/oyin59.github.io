@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProjectMatch — Project Case Study</title>
+
+  <!-- Shared galaxy stylesheet -->
+  <link rel="stylesheet" href="project.css" />
+  <link rel="icon" type="image/svg+xml" href="../asset/favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky header -->
+  <header class="project-header" role="banner">
+    <div class="container">
+      <a href="../index.html" class="back-link" aria-label="Back to portfolio">
+        <span aria-hidden="true">←</span> Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="project" role="main">
+    <!-- HERO / TITLE -->
+    <section class="hero">
+      <div class="container flow">
+        <h1 class="title">ProjectMatch ✨</h1>
+        <p class="lead">
+          A smart, aesthetic, and automated university project allocation system. Say goodbye to messy spreadsheets! Designed to match students to final-year academic projects with fairness, speed, and style.
+        </p>
+
+        <!-- Quick overview row -->
+        <ul class="overview" aria-label="Project overview">
+          <li>
+            <span class="label">Role</span>
+            <span class="value">Full Stack Developer</span>
+          </li>
+          <li>
+            <span class="label">Scope</span>
+            <span class="value">Django Application Build</span>
+          </li>
+          <li>
+            <span class="label">Timeline</span>
+            <span class="value">Final Year Project</span>
+          </li>
+        </ul>
+
+        <!-- Tags -->
+        <div class="tags" aria-label="Tags">
+          <span class="tag">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">SQLite</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY: Problem / Goal / Approach / Outcome -->
+    <section class="story container">
+      <div class="story-grid">
+        <article class="story-card">
+          <h2>Premium Aesthetic</h2>
+          <p>
+            Built with the official Aston University color palette, featuring deep purples, soft gradients, and interactive push-buttons for a satisfying UX. Beautifully designed for Students, Supervisors, and Admins.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>Drag-and-Drop Magic</h2>
+          <p>
+            Students can effortlessly select and rank their top 3 project preferences using our tactile, engaging, and interactive drag-and-drop user interface.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>The Fairness Engine</h2>
+          <p>
+            Our custom algorithmic matching engine calculates profile suitability and strict project quotas to allocate the entire cohort automatically, quickly resolving academic mismatches!
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>Dashboards & Visuals</h2>
+          <p>
+            Dynamic Chart.js visuals and progress bars give supervisors real-time insights into student prerequisite matches. A friendly navbar bell alerts users of new actions alongside SweetAlert2 modals!
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- REQUIREMENT BRIEF (PRINT ONLY) -->
+    <section class="req-brief container section">
+      <h2 class="section-title">Setup & Testing</h2>
+      <p>Want to take ProjectMatch for a spin? We use pipenv to manage our Python magic. 🪄</p>
+
+      <h3>Prerequisites</h3>
+      <ul class="bullet">
+        <li>Python 3.x installed on your machine.</li>
+        <li>Pipenv installed (<code>pip install pipenv</code>).</li>
+      </ul>
+      
+      <h3>Installation</h3>
+      <ul class="bullet">
+        <li><code>git clone https://github.com/oyin59/Project-match.git</code></li>
+        <li><code>pipenv install</code> then <code>pipenv shell</code> to start the environment.</li>
+        <li><code>python manage.py migrate</code> to set up the SQLite database.</li>
+        <li><strong>Highly Recommended:</strong> <code>python manage.py seed_final_data</code> to beautifully generate dummy data (Students, Supervisors, Admins, Projects).</li>
+        <li><code>python manage.py runserver</code> to start!</li>
+      </ul>
+    </section>
+
+    <!-- LINKS -->
+    <section class="container links">
+      <a class="btn glow" href="https://github.com/oyin59/Project-match" target="_blank" rel="noopener">View on GitHub</a>
+    </section>
+  </main>
+
+  <footer class="project-footer" role="contentinfo">
+    &copy; 2025 Oyinlola Arowolo. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
