@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Night Shift — Project Case Study</title>
+
+  <!-- Shared galaxy stylesheet -->
+  <link rel="stylesheet" href="project.css" />
+  <link rel="icon" type="image/svg+xml" href="../asset/favicon.svg" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky header -->
+  <header class="project-header" role="banner">
+    <div class="container">
+      <a href="../index.html" class="back-link" aria-label="Back to portfolio">
+        <span aria-hidden="true">←</span> Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="project" role="main">
+    <!-- HERO / TITLE -->
+    <section class="hero">
+      <div class="container flow">
+        <h1 class="title">Campus Night Shift 🔦</h1>
+        <p class="lead">
+          A charming yet thrilling stealth-adventure prototype built in Unity (C#). Slip into the role of a sneaky nocturnal explorer wandering a sprawling indoor school environment.
+        </p>
+
+        <!-- Quick overview row -->
+        <ul class="overview" aria-label="Project overview">
+          <li>
+            <span class="label">Role</span>
+            <span class="value">Game Developer</span>
+          </li>
+          <li>
+            <span class="label">Scope</span>
+            <span class="value">Game Logic & AI</span>
+          </li>
+          <li>
+            <span class="label">Timeline</span>
+            <span class="value">Prototype Phase</span>
+          </li>
+        </ul>
+
+        <!-- Tags -->
+        <div class="tags" aria-label="Tags">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">AI AI FSM</span>
+          <span class="tag">Game Dev</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY: Problem / Goal / Approach / Outcome -->
+    <section class="story container">
+      <div class="story-grid">
+        <article class="story-card">
+          <h2>Mission</h2>
+          <p>
+            Collect hidden shiny batteries scattered around the campus. But watch out! 🤫 The friendly (but very strict) security guard is on his night patrol. Keep out of sight, stay quiet, and try not to lose your 3 lives!
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>Gameplay Mechanics</h2>
+          <ul class="bullet">
+            <li><strong>Stealth:</strong> Tip-toe through halls to avoid line-of-sight & Field-of-Vision (FOV).</li>
+            <li><strong>Controls:</strong> WASD to move, Mouse to look, F to interact.</li>
+            <li><strong>Interaction:</strong> Peek corners, open doors, physics-based raycast system for pickups.</li>
+          </ul>
+        </article>
+
+        <article class="story-card">
+          <h2>Under the Hood (Architecture)</h2>
+          <ul class="bullet">
+            <li><strong>AI:</strong> AgentController manages the guard's Finite State Machine (Patrol -> Chase).</li>
+            <li><strong>Player:</strong> PlayerController, FollowCamera, and Interactions ensure smooth movement.</li>
+            <li><strong>Systems:</strong> GameManager core handles 3-Strike life system, respawns, best score.</li>
+          </ul>
+        </article>
+
+        <article class="story-card">
+          <h2>What's Next?</h2>
+          <p>
+            The prototype is fully playable! We are polishing interactions (so doors don't bump you), adding tippy-tap footstep audio, squashing minor UI visual glitches, and crafting a helpful minimap.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="container section">
+      <h2 class="section-title">Features</h2>
+      <ul class="bullet">
+        <li><strong>Smart Enemy AI:</strong> Guard transitions from Patrol to Chase seamlessly.</li>
+        <li><strong>Physics Interactions:</strong> Interactive world with single and double doors.</li>
+        <li><strong>Complete Game Loop:</strong> GameManager handles flow, saving Best Time and Lifetime Score 🏆.</li>
+        <li><strong>Immersive UI:</strong> Beautifully stylized Main Menu with smooth scene loading and dynamic HUD.</li>
+      </ul>
+    </section>
+
+    <!-- TECH -->
+    <section class="container section">
+      <h2 class="section-title">Tech Stack</h2>
+      <ul class="tech-list" aria-label="Technologies used">
+        <li>Unity (Engine)</li>
+        <li>C# (Scripting)</li>
+        <li>Raycasts & Physics</li>
+        <li>Custom FSM</li>
+      </ul>
+    </section>
+
+    <!-- LINKS -->
+    <section class="container links">
+      <a class="btn glow" href="https://github.com/oyin59/Campus-Night-Shift" target="_blank" rel="noopener">View on GitHub</a>
+    </section>
+  </main>
+
+  <footer class="project-footer" role="contentinfo">
+    &copy; 2025 Oyinlola Arowolo. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
