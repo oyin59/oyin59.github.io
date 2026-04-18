@@ -61,38 +61,34 @@
       </div>
     </section>
 
-    <!-- STORY: Problem / Goal / Approach / Outcome -->
+    <!-- STORY: Problem / Role / Solution / Outcome -->
     <section class="story container">
       <div class="story-grid">
         <article class="story-card">
-          <h2>Mission</h2>
+          <h2>The Problem</h2>
           <p>
-            Collect hidden shiny batteries scattered around the campus. But watch out! 🤫 The friendly (but very strict) security guard is on his night patrol. Keep out of sight, stay quiet, and try not to lose your 3 lives!
+            Implementing intelligent, believable stealth AI in a 3D environment is a complex task. Guards need to rotate between states (Patrol, Search, Chase) while maintaining consistent Field-of-Vision (FOV) and response logic.
           </p>
         </article>
 
         <article class="story-card">
-          <h2>Gameplay Mechanics</h2>
-          <ul class="bullet">
-            <li><strong>Stealth:</strong> Tip-toe through halls to avoid line-of-sight & Field-of-Vision (FOV).</li>
-            <li><strong>Controls:</strong> WASD to move, Mouse to look, F to interact.</li>
-            <li><strong>Interaction:</strong> Peek corners, open doors, physics-based raycast system for pickups.</li>
-          </ul>
-        </article>
-
-        <article class="story-card">
-          <h2>Under the Hood (Architecture)</h2>
-          <ul class="bullet">
-            <li><strong>AI:</strong> AgentController manages the guard's Finite State Machine (Patrol -> Chase).</li>
-            <li><strong>Player:</strong> PlayerController, FollowCamera, and Interactions ensure smooth movement.</li>
-            <li><strong>Systems:</strong> GameManager core handles 3-Strike life system, respawns, best score.</li>
-          </ul>
-        </article>
-
-        <article class="story-card">
-          <h2>What's Next?</h2>
+          <h2>My Role</h2>
           <p>
-            The prototype is fully playable! We are polishing interactions (so doors don't bump you), adding tippy-tap footstep audio, squashing minor UI visual glitches, and crafting a helpful minimap.
+            As the <strong>Lead Game Developer</strong>, I architected the core AI behaviors, implemented the player movement physics, and designed the interaction systems using Unity and C#.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>The Solution</h2>
+          <p>
+            A modular <strong>Finite State Machine (FSM)</strong> that dictates guard awareness. Combined with a Raycast-based interaction system, it creates a tactile world where players must physically peek corners and dodge line-of-sight.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <h2>The Outcome</h2>
+          <p>
+            A fully playable stealth-adventure prototype awarded a <strong>30/30</strong> academic-tier grade. Features successful Save/Load systems, responsive HUD, and a scalable codebase for future level design.
           </p>
         </article>
       </div>
