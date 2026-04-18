@@ -172,38 +172,27 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // =============================================
-  // 9. TYPING EFFECT FOR HOME (Optional Enhancement)
+  // 9. TYPING EFFECT (Updated Roles)
   // =============================================
-  // You can uncomment this if you want a typing effect
-  // instead of the CSS animation
-
-  // =============================================
-  // 9. TYPING EFFECT (type + erase, no rotation animation)
-  // =============================================
-
-  // 1) Grab the container and extract the roles from its child spans
   const wordsContainer = document.querySelector('.changing-words');
   if (wordsContainer) {
-    const roles = [...wordsContainer.querySelectorAll('span')].map(s => s.textContent.trim()).filter(Boolean);
+    const roles = ["Front-end Designer", "Creative Technologist", "UI/UX Enthusiast", "Problem Solver"];
 
-    // 2) Replace inner content with a single target span for typing
     wordsContainer.innerHTML = '<span class="typing-role" aria-live="polite"></span>';
     const roleEl = wordsContainer.querySelector('.typing-role');
 
-    // 3) Config
-    const TYPE_SPEED = 70;        // ms per character
-    const ERASE_SPEED = 40;       // ms per character (faster erase)
-    const PAUSE_AFTER_TYPE = 1400; // hold the full word
-    const PAUSE_AFTER_ERASE = 450; // small rest before next word
+    const TYPE_SPEED = 70;
+    const ERASE_SPEED = 40;
+    const PAUSE_AFTER_TYPE = 2000;
+    const PAUSE_AFTER_ERASE = 500;
 
     let roleIndex = 0;
     let charIndex = 0;
-    let typing = true; // true = typing, false = erasing
+    let typing = true;
 
     function tick() {
       const word = roles[roleIndex] || '';
       if (typing) {
-        // Type forward
         roleEl.textContent = word.slice(0, ++charIndex);
         if (charIndex === word.length) {
           typing = false;
@@ -212,7 +201,6 @@ document.addEventListener('DOMContentLoaded', function () {
           setTimeout(tick, TYPE_SPEED);
         }
       } else {
-        // Erase backward
         roleEl.textContent = word.slice(0, --charIndex);
         if (charIndex === 0) {
           typing = true;
@@ -224,7 +212,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
-    // 4) Respect reduced motion
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion) {
       roleEl.textContent = roles[0] || '';
@@ -233,40 +220,69 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // =============================================
+  // 10. CURSOR GLOW EFFECT
+  // =============================================
+  const cursorGlow = document.querySelector('.cursor-glow');
+  if (cursorGlow) {
+    document.addEventListener('mousemove', (e) => {
+      cursorGlow.style.left = `${e.clientX}px`;
+      cursorGlow.style.top = `${e.clientY}px`;
+    });
+  }
 
   // =============================================
-  // 10. CONSOLE EASTER EGG
+  // 11. PORTFOLIO FILTERING
   // =============================================
-  console.log(
-    '%c👋 Hey there, curious developer!',
-    'font-size: 20px; color: #79cef2; font-weight: bold;'
-  );
-  console.log(
-    '%cLove what you see? Let\'s collaborate! 🚀',
-    'font-size: 14px; color: #666;'
-  );
-  console.log(
-    '%cReach out: email@example.com',
-    'font-size: 12px; color: #999;'
-  );
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const portfolioCards = document.querySelectorAll('.portfolio-card');
+  const gallerySpotlight = document.querySelector('.gallery-spotlight');
 
-  // =============================================
-  // 11. PRELOAD IMAGES
-  // =============================================
-  const images = document.querySelectorAll('img[src]');
-  images.forEach(img => {
-    const newImg = new Image();
-    newImg.src = img.src;
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      // Update active btn
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      const filter = this.getAttribute('data-filter');
+
+      portfolioCards.forEach(card => {
+        const categories = card.getAttribute('data-category').split(' ');
+        if (filter === 'all' || categories.includes(filter)) {
+          card.style.display = 'flex';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 400);
+        }
+      });
+
+      // Handle spotlight visibility
+      if (gallerySpotlight) {
+        if (filter === 'all' || filter === '3d') {
+          gallerySpotlight.style.display = 'grid';
+          setTimeout(() => { gallerySpotlight.style.opacity = '1'; }, 10);
+        } else {
+          gallerySpotlight.style.opacity = '0';
+          setTimeout(() => { gallerySpotlight.style.display = 'none'; }, 400);
+        }
+      }
+    });
   });
 
   // =============================================
-  // 12. SMOOTH REVEAL ON PAGE LOAD
+  // 12. CONSOLE EASTER EGG
   // =============================================
-  document.body.style.opacity = '0';
-  window.addEventListener('load', () => {
-    document.body.style.transition = 'opacity 0.5s ease';
-    document.body.style.opacity = '1';
-  });
+  console.log(
+    '%c👋 Oyinlola is built differently.',
+    'font-size: 20px; color: #5C9EFF; font-weight: bold;'
+  );
 
 
 
