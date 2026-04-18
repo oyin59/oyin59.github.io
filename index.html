@@ -23,6 +23,9 @@
   <!-- PROGRESS BAR -->
   <div class="progress-indicator"></div>
 
+  <!-- CURSOR GLOW -->
+  <div class="cursor-glow"></div>
+
   <!-- HEADER / NAVIGATION -->
   <header>
     <div class="container">
@@ -31,19 +34,17 @@
         <ul>
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="cv.html">CV</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="asset/cv.pdf" class="nav-btn" download>Download CV</a></li>
         </ul>
-        <ul class="social-links">
-          <li><a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i
-                class="fab fa-instagram"></i></a></li>
           <li><a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i
                 class="fab fa-linkedin"></i></a></li>
           <li><a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i
                 class="fab fa-github"></i></a></li>
-        </ul>
+          <li><a href="https://yoursubstack.substack.com" target="_blank" aria-label="Substack"><i
+                class="fas fa-pen-nib"></i></a></li>
         <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
           <i class="fas fa-moon"></i>
         </button>
@@ -64,8 +65,16 @@
         </span>
       </p>
       <p class="tagline">Designing digital experiences that tell stories — one pixel at a time.</p>
-      <a href="#about" class="btn">About me</a>
-      <a href="cv.html" class="btn btn-outline" style="margin-left: 1rem;">View CV</a>
+      
+      <div class="availability-pill">
+        <span class="status-dot"></span>
+        Open to remote roles & freelance · Based in Abuja, NG
+      </div>
+
+      <div class="hero-btns">
+        <a href="#about" class="btn">About me</a>
+        <a href="asset/cv.pdf" class="btn btn-outline" style="margin-left: 1rem;" download>View CV</a>
+      </div>
     </div>
   </section>
 
@@ -86,95 +95,124 @@
         <p class="lead">
           Hey 👋🏽 I’m <strong>Oyinlola Arowolo</strong> — a front-end designer and creative technologist
           passionate about blending design and code to tell meaningful digital stories.
-          I’m currently studying <strong>Computer Science at Aston University</strong>, where my final-year
-          project dives into <strong>Django</strong> and <strong>MySQL</strong> to build interactive, data-driven
-          experiences.
+          I’m currently finishing my **BSc at Aston**, heading into **NYSC**, then an **MSc** — building in every gap.
         </p>
 
         <p class="lead">
           My focus lies in crafting interfaces that feel intuitive, visually engaging, and user-focused.
-          I believe great design isn’t just about aesthetics — it’s about how it makes people feel while they interact
-          with it.
+          I believe great design isn’t just about aesthetics — it’s about how it makes people feel.
         </p>
-
-        <ul class="info-list">
-          <li><strong>Based in:</strong> Abuja, Nigeria 🌍</li>
-          <li><strong>Currently:</strong> Final-year Computer Science student at Aston University</li>
-          <li><strong>Focus:</strong> Front-end Development, UI/UX Design, Creative Tech</li>
-          <li><strong>Learning:</strong> Django & MySQL (for my FYP)</li>
-          <li><strong>Freelance:</strong> Open to collaborations</li>
-        </ul>
 
         <div class="about-summary">
           <p>
-            Outside of tech, I run a jewelry brand called <strong>Omoyin</strong> — where creativity meets color —
-            and share faith-driven inspiration through <strong>Faith Buzz</strong>.
-            Whether it’s crafting digital products or handmade designs, my goal stays the same:
-            to create things that inspire, connect, and spark joy.
+            Outside of tech, I run a jewelry brand called <strong>Omoyin</strong> — where creativity meets color. 
+            I also write <strong>Becoming Oyin</strong>, a weekly reflection on faith, design, and the journey in between.
           </p>
+        </div>
+
+        <div class="status-block">
+          <div class="status-item">
+            <span class="label">🟢 Open to</span>
+            <span class="value">Remote Front-end, UI/UX Freelance</span>
+          </div>
+          <div class="status-item">
+            <span class="label">📍 Based in</span>
+            <span class="value">Abuja, Nigeria</span>
+          </div>
+          <div class="status-item">
+            <span class="label">✍️ Writing</span>
+            <span class="value">Becoming Oyin on Substack</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOW I WORK -->
+    <div class="process-section">
+      <h3>How I Work</h3>
+      <p class="section-subtext">My methodology for bridging the gap between design and functional code.</p>
+      
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-number">01</span>
+          <h4>Discover</h4>
+          <p>Understanding the problem, user goals, and constraints through research.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">02</span>
+          <h4>Define</h4>
+          <p>Structuring ideas into wireframes, flows, and technical requirements.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">03</span>
+          <h4>Design</h4>
+          <p>High-fidelity prototyping in Figma with focus on accessibility and delight.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">04</span>
+          <h4>Build</h4>
+          <p>Turning pixels into performant, responsive code using modern stacks.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-number">05</span>
+          <h4>Refine</h4>
+          <p>Testing, iterating, and polishing until the experience feels seamless.</p>
         </div>
       </div>
     </div>
 
     <!-- TECH STACK -->
     <div class="tech-stack">
-      <h3>My Tech Stack</h3>
-      <p class="section-subtext">
-        Technologies I work with across Front-end, Back-end, and UI/UX Design
-      </p>
+      <h3>Technologies & Tools</h3>
+      <p class="section-subtext">A tiered look at the layers of my professional toolkit.</p>
 
-      <!-- FRONT-END -->
-      <h4 class="category-title">Front-end</h4>
-      <div class="tech-cards">
-        <div class="tech-card"><i class="devicon-html5-plain colored"></i>
-          <h5>HTML5</h5>
-          <p>Semantic structure for clean markup.</p>
+      <div class="tech-tiers">
+        <div class="tech-tier">
+          <div class="tier-label">Front-End</div>
+          <div class="tier-items">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3 / SASS</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Bootstrap</span>
+          </div>
         </div>
-        <div class="tech-card"><i class="devicon-css3-plain colored"></i>
-          <h5>CSS3</h5>
-          <p>Layout, spacing, and polish.</p>
+        
+        <div class="tech-tier">
+          <div class="tier-label">Back-End</div>
+          <div class="tier-items">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Django</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">SQLite</span>
+          </div>
         </div>
-        <div class="tech-card"><i class="devicon-javascript-plain colored"></i>
-          <h5>JavaScript</h5>
-          <p>Interactions and logic.</p>
-        </div>
-        <div class="tech-card"><i class="devicon-bootstrap-plain colored"></i>
-          <h5>Bootstrap</h5>
-          <p>Rapid, responsive components.</p>
-        </div>
-      </div>
 
-      <!-- BACK-END -->
-      <h4 class="category-title">Back-end</h4>
-      <div class="tech-cards">
-        <div class="tech-card"><i class="devicon-django-plain colored"></i>
-          <h5>Django</h5>
-          <p>Python framework (my FYP backend).</p>
+        <div class="tech-tier">
+          <div class="tier-label">Design</div>
+          <div class="tier-items">
+            <span class="tech-badge">Figma</span>
+            <span class="tech-badge">Adobe XD</span>
+            <span class="tech-badge">UI/UX Design</span>
+            <span class="tech-badge">Prototyping</span>
+          </div>
         </div>
-        <div class="tech-card"><i class="devicon-mysql-plain colored"></i>
-          <h5>MySQL</h5>
-          <p>Relational data storage.</p>
-        </div>
-      </div>
 
-      <!-- DESIGN & TOOLS -->
-      <h4 class="category-title">Design & Tools</h4>
-      <div class="tech-cards">
-        <div class="tech-card"><i class="devicon-figma-plain colored"></i>
-          <h5>Figma</h5>
-          <p>UI/UX design and prototyping.</p>
+        <div class="tech-tier">
+          <div class="tier-label">3D & Motion</div>
+          <div class="tier-items">
+            <span class="tech-badge">Blender</span>
+            <span class="tech-badge">Unity (C#)</span>
+            <span class="tech-badge">3D Modeling</span>
+          </div>
         </div>
-        <div class="tech-card"><i class="devicon-unity-original colored"></i>
-          <h5>Unity</h5>
-          <p>Interactive 3D experiences.</p>
-        </div>
-        <div class="tech-card"><i class="devicon-blender-original colored"></i>
-          <h5>Blender</h5>
-          <p>3D modeling & animation.</p>
-        </div>
-        <div class="tech-card"><i class="fa-solid fa-laptop-code"></i>
-          <h5>Responsive Design</h5>
-          <p>Mobile-first layouts and testing.</p>
+
+        <div class="tech-tier">
+          <div class="tier-label">Learning</div>
+          <div class="tier-items">
+            <span class="tech-badge"><span class="learning-dot"></span>React.js</span>
+            <span class="tech-badge"><span class="learning-dot"></span>Next.js</span>
+            <span class="tech-badge"><span class="learning-dot"></span>Tailwind CSS</span>
+          </div>
         </div>
       </div>
     </div>
@@ -237,8 +275,20 @@
         <h3>Creative Strategy</h3>
         <p>Blend aesthetics with usability to create experiences that connect and convert.</p>
       </div>
+      <div class="service-card"><i class="fas fa-fingerprint"></i>
+        <h3>Brand Identity</h3>
+        <p>Designing cohesive visual systems, logos, and brand guidelines for growing ventures.</p>
+      </div>
+    </div>
+
+    <!-- HOW TO WORK WITH ME -->
+    <div class="work-with-me" style="text-align: center; margin-top: 4rem; padding: 2rem; background: var(--bg-primary); border-radius: 20px; border: 1px dashed var(--accent);">
+      <h4>How to work with me</h4>
+      <p style="color: var(--text-dim); max-width: 600px; margin: 0.5rem auto;">Drop me an email or DM on Instagram. I typically respond within 48 hours and take on 2–3 projects at a time.</p>
     </div>
   </section>
+
+
 
   <!-- PORTFOLIO SECTION -->
   <section id="portfolio" class="portfolio">
@@ -248,58 +298,139 @@
       <p class="section-subtitle">Each project tells a story — here are a few of mine.</p>
     </div>
 
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="dev">Development</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+      <button class="filter-btn" data-filter="3d">3D & Motion</button>
+    </div>
+
     <div class="portfolio-grid">
-      <div class="portfolio-card">
-        <img src="asset/ecommerce-home.png" alt="E-commerce Website">
-        <div class="card-content">
-          <h3>E-commerce Website</h3>
-          <a href="Projects/ecommerce.html" class="project-link" target="_blank">View Project →</a>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <img src="asset/weather-app-card.png" alt="Figma Design">
-        <div class="card-content">
-          <h3>Weather App</h3>
-          <a href="Projects/weather.html" class="project-link">View Project →</a>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <img src="asset/calculator-layout.png" alt="Personal Branding">
-        <div class="card-content">
-          <h3>Calculator App</h3>
-          <a href="Projects/calculator.html" class="project-link">View Project →</a>
-        </div>
-      </div>
-      <div class="portfolio-card">
-        <img src="asset/kiosk-map.png" alt="Figma Design">
-        <div class="card-content">
-          <h3>Museum Kiosk</h3>
-          <a href="Projects/kiosk.html" class="project-link">View Project →</a>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
-        <div class="cover-icon" style="background: linear-gradient(135deg, #1e3a8a, #172554); color: #89F7FE;">
-          <i class="devicon-unity-original"></i>
-        </div>
-        <div class="card-content">
-          <h3>Campus Night Shift</h3>
-          <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem;">A stealth-adventure prototype built in Unity.</p>
-          <a href="Projects/campus_night_shift.html" class="project-link">View Project →</a>
-        </div>
-      </div>
-
-      <div class="portfolio-card">
+      <!-- ProjectMatch -->
+      <div class="portfolio-card" data-category="dev">
         <div class="cover-icon" style="background: linear-gradient(135deg, #4c1d95, #2e1065); color: #d8b4fe;">
           <i class="devicon-django-plain"></i>
         </div>
         <div class="card-content">
           <h3>ProjectMatch</h3>
-          <p style="font-size: 0.9rem; color: var(--text-dim); margin-bottom: 1rem;">A smart Django-based project allocation system.</p>
-          <a href="Projects/project_match.html" class="project-link">View Project →</a>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">Smart Django-based project allocation system with a custom Fairness Engine.</p>
+          <a href="Projects/project_match.html" class="project-link">View Case Study →</a>
         </div>
       </div>
 
+      <!-- Campus Night Shift -->
+      <div class="portfolio-card" data-category="dev 3d">
+        <div class="cover-icon" style="background: linear-gradient(135deg, #1e3a8a, #172554); color: #89F7FE;">
+          <i class="devicon-unity-original"></i>
+        </div>
+        <div class="card-content">
+          <h3>Campus Night Shift</h3>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">A stealth-adventure prototype built in Unity (C#) featuring Guard AI.</p>
+          <a href="Projects/campus_night_shift.html" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Wayve -->
+      <div class="portfolio-card" data-category="design">
+        <img src="asset/wayve-mockup.png" alt="Wayve App">
+        <div class="card-content">
+          <h3>Wayve (Abuja Concept)</h3>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">Hyperlocal discovery app concept with beautiful map-centric UI.</p>
+          <a href="#" class="project-link">View Figma →</a>
+        </div>
+      </div>
+
+      <!-- Omoyin -->
+      <div class="portfolio-card" data-category="design">
+        <img src="asset/omoyin-brand.png" alt="Omoyin Brand">
+        <div class="card-content">
+          <h3>Omoyin Visual Identity</h3>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">Brand guidelines and visual system for a handmade jewelry label.</p>
+          <a href="#" class="project-link">View Identity →</a>
+        </div>
+      </div>
+
+      <!-- E-commerce -->
+      <div class="portfolio-card" data-category="dev design">
+        <img src="asset/ecommerce-home.png" alt="E-commerce Website">
+        <div class="card-content">
+          <h3>E-commerce Website</h3>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">Full-scale responsive shop design with interactive product grids.</p>
+          <a href="Projects/ecommerce.html" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Weather App -->
+      <div class="portfolio-card" data-category="dev">
+        <img src="asset/weather-app-card.png" alt="Weather App">
+        <div class="card-content">
+          <h3>Weather App</h3>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">Clean data-driven dashboard using OpenWeatherMap API.</p>
+          <a href="Projects/weather.html" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Calculator -->
+      <div class="portfolio-card" data-category="dev">
+        <img src="asset/calculator-layout.png" alt="Tactile Calculator">
+        <div class="card-content">
+          <h3>Tactile Calculator</h3>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">Minimalist, dark-themed arithmetic tool built with vanilla JS.</p>
+          <a href="Projects/calculator.html" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Museum Kiosk -->
+      <div class="portfolio-card" data-category="design">
+        <img src="asset/kiosk-map.png" alt="Museum Kiosk Guide">
+        <div class="card-content">
+          <h3>Museum Kiosk Guide</h3>
+          <p style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 1rem;">Touchscreen exhibit guide with an inclusive Hub-and-Spoke UI model.</p>
+          <a href="Projects/kiosk.html" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- 3D Gallery Spotlight -->
+      <div class="gallery-spotlight" data-category="3d">
+        <div class="spotlight-content">
+          <span class="step-number">Featured 3D Visual</span>
+          <h2>Stadium DJ Stage</h2>
+          <p>A striking 3D environment built in Blender, featuring complex lighting choreography and crystalline disco effects. Fully animated in the final render.</p>
+          <a href="#" class="project-link" style="margin-top:1.5rem;">Watch Animation →</a>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    <div class="writing-strip">
+      <div class="section-header">
+        <h2>Beyond the Code</h2>
+        <div class="underline"></div>
+        <p class="section-subtitle">Weekly reflections on design, faith, and the creative journey over on **Becoming Oyin**.</p>
+      </div>
+      
+      <div class="writing-grid">
+        <div class="writing-card">
+          <span class="date">April 2026</span>
+          <h4>The Intersection of Aesthetics and Accessibility</h4>
+          <p>Why "pretty" is a high-bar requirement, but "useful" is the non-negotiable foundation.</p>
+          <a href="#">Read on Substack →</a>
+        </div>
+        <div class="writing-card">
+          <span class="date">March 2026</span>
+          <h4>NYSC, MSc, and the Building in the Gap</h4>
+          <p>Mapping out the professional future while staying grounded in the present build.</p>
+          <a href="#">Read on Substack →</a>
+        </div>
+        <div class="writing-card">
+          <span class="date">February 2026</span>
+          <h4>The Fairness Engine: Building Heuristics</h4>
+          <p>Breaking down the logic behind the ProjectMatch allocation algorithm.</p>
+          <a href="#">Read on Substack →</a>
+        </div>
+      </div>
+      <a href="#" class="btn btn-outline" style="margin-top: 3rem;">Subscribe to Letters</a>
     </div>
   </section>
 
@@ -329,13 +460,24 @@
 
       <div class="contact-form card">
         <form action="#" method="POST">
-          <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required />
+          <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="E.g. Jane Doe" required />
           </div>
           <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email"
-              required /></div>
+              placeholder="jane@example.com" required /></div>
+          
+          <div class="form-group">
+            <label for="project-type">Project Type</label>
+            <select id="project-type" name="project-type">
+              <option value="freelance">Freelance UI/UX</option>
+              <option value="full-time">Full-time Opportunity</option>
+              <option value="collab">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
           <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5"
-              required></textarea></div>
-          <button type="submit" class="btn">Send Message</button>
+              placeholder="Tell me about your vision..." required></textarea></div>
+          <button type="submit" class="btn">Let's build something.</button>
         </form>
       </div>
     </div>
